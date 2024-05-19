@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <script src="/assets/js/index.js" defer></script>
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="calculator">
+        <div class="display">
+            <input readonly id="display" value="0">
+        </div>
+        <div class="keys">
+            <button onclick="appendD('9')">9</button>
+            <button onclick="appendD('8')">8</button>
+            <button onclick="appendD('7')">7</button>
+            <button onclick="appendD('/')" class="op_btn">/</button>
+            <button onclick="appendD('6')">6</button>
+            <button onclick="appendD('5')">5</button>
+            <button onclick="appendD('4')">4</button>
+            <button onclick="appendD('*')" class="op_btn">*</button>
+            <button onclick="appendD('3')">3</button>
+            <button onclick="appendD('2')">2</button>
+            <button onclick="appendD('1')">1</button>
+            <button onclick="appendD('-')" class="op_btn">-</button>
+            <button onclick="appendD('0')">0</button>
+            <button onclick="appendD('.')">.</button>
+            <button onclick="calculateD()" class="op_btn">=</button>
+            <button onclick="appendD('+')" class="op_btn">+</button>
+            <button onclick="clearD()" class="op_btn">C</button>
+        </div>
+    </div>
+    <div class="history_content">
+        <h1>Histórico</h1>
+        <ul id="history_list">
+        </ul>
+        <button class="li_btn" onclick="clearL()">Limpar</button>
+    </div>
+</body>
+</html>
