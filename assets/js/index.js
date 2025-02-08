@@ -37,6 +37,10 @@ function clearL(){
 }
 
 function calculateD(){
+    if(display.value==="Error"){
+        clearD()
+    }
+
     if(display.value.includes("+") || display.value.includes("-") || display.value.includes("*") || display.value.includes("/")){
         try{
             calc=display.value;
